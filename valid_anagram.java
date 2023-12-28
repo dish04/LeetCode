@@ -15,7 +15,9 @@ class valid_anagram{
     public boolean isAnagram(String s, String t){
       char[] cs = s.toCharArray();
       char[] ct = t.toCharArray();
-      return Arrays.equals(Arrays.sort(ct),Arrays.sort(cs));
+      Arrays.sort(cs)
+      Arrays.sort(ct)
+      return Arrays.equals(cs,ct);
     }
   }
   //Solution i came up with
