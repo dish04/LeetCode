@@ -1,4 +1,19 @@
-class contains_duplicate {
+class contains_duplicate1 {
+    //1. O(n)
+    boolean containsDuplicate(int[] nums){
+        HashSet<Integer> seen = new HashSet<>();
+        for(int num : nums){
+            if(seen.contains(num)){
+                return true;
+            }
+            seen.add(num);
+        }
+        return false;
+    }
+    
+}
+class contains_duplicate2 {
+    //2. O(n log n)
     static void merge(int[] arr, int left, int middle, int right) {
         int n1 = middle - left + 1;
         int n2 = right - middle;
