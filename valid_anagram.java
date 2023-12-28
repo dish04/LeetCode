@@ -1,7 +1,7 @@
 class valid_anagram{
   //Another smart solution i found
   class Solution_smart {
-    //basically what i came up with but its fatser and requires less code, need to learn when and where to implement certain ds
+    //Basically what i came up with but its fatser and requires less code, need to learn when and where to implement certain ds
     public boolean isAnagram(String s, String t) {
         int[] alphabet = new int[26];
         for (int i = 0; i < s.length(); i++) alphabet[s.charAt(i) - 'a']++;
