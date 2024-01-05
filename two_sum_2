@@ -1,0 +1,14 @@
+class twoSum2 {
+    public int[] twoSum(int[] numbers, int target) {
+        int left = 0, right = numbers.length-1, mid = 0;
+        while(right>left){
+            if(numbers[right]+numbers[left]==target){
+                int[] ret = {left+1, right+1};
+                return ret;
+            }
+            if(numbers[right]+numbers[left]>target) right--;
+            else left++;
+        }
+        return null;
+    }
+}
